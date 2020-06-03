@@ -1,0 +1,14 @@
+{
+  "name": "sharpjs-lambda-layer",
+  "version": "1.0.0",
+  "description": "sharp.js lambda layer for nodejs 12.x runtime",
+  "scripts": {
+    "build": "npm install --arch=x64 --platform=linux sharp && mkdir -p nodejs && cp -r node_modules nodejs/ && zip -r sharpjs-lambda-layer.zip nodejs"
+  },
+  "dependencies": {
+    "sharp": "^0.25.3"
+  },
+  "devDependencies": {},
+  "author": "maxgr",
+  "license": "MIT"
+}
